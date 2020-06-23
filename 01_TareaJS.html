@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tarea 1</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="">
+	
+</head>
+<body>
+	<li class="nav-item"><a class="nav-link" href="index.html">Indice</a></li>
+
+	<script>
+		var calf
+		//Declaramos el prompt para preguntar por la calificacion
+		var calf= prompt("Indroduce tu calificacion");
+		//Declaramos un if para y colocamos las diferentes calificaciones con && para que se cumpla el rango de las calificaciones
+		if (calf>=9.5 && calf<=10){
+			//escribimos un mensaje para cada rango de calificacion
+			document.write("Tiene el nivel de competecia Autónomo(AU)")
+		}
+		
+		else if(calf>=8.5 && calf<=9.4){
+			document.write("Tiene el nivel de competecia Destacado(DE)")
+		}
+		
+		else if (calf>=7.5 && calf<=8.4){
+			document.write("Tiene el nivel de competecia Satisfactorio(SA)")
+		}
+		else if(calf<=7.4){
+			document.write("Tiene el nivel de competecia No acreditado(NA)")
+		}
+		//si se ingresa una calificacion mayor a 10 salta este mensaje
+		else{
+			document.write("Usted a ingresado una calificacion incorrecta")
+		}
+	
+	</script>
+
+	
+</body>
+</html>

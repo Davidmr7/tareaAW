@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tarea 02 con JS</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="">
+	<script>
+		function cambiartextos(){
+			//se agrega el prompt para mostrar la pantalla 
+			var nombre= prompt("Indroduce tu nombre");
+			//se cambia la cadena del final por la variable del prompt
+			document.getElementById("titulo").innerHTML=nombre;
+		}
+		document.getElementById("boton").onclick=function(){
+			cambiartextos();
+		}
+	</script>
+</head>
+<body>
+	<li class="nav-item"><a class="nav-link" href="index.html">Indice</a></li>
+	
+	<h1 id="titulo">Tarea 02 con JavaScript</h1>
+	<input type="button" value="ClicMe!" onclick="cambiartextos()" id="boton">
+
+</body>
+</html>

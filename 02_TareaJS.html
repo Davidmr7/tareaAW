@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tarea 02 con JS</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="">
+	<script>
+		function cambiartextos(){
+			//con el getElementById seleccionamos el id de la parte que queremos cambiar y con el innerhtml ponemos la nueva cadena
+			document.getElementById("titulo").innerHTML="Jesus David Murillo Ramirez";
+		}
+		// aqui se selecciona el id del boton y ponemos onclick para que ejecute una accion al momento de ser presionado
+		//ponemos una funcion anonima y esta ejecutara la funcion de arriba la cual es cambiartextos()
+		document.getElementById("boton").onclick=function(){
+			cambiartextos();
+		}
+	</script>
+</head>
+<body>
+	<li class="nav-item"><a class="nav-link" href="index.html">Indice</a></li>
+	
+	<!--Se pueso un id al h1 para identificarlo y poder usarlo para cambiar el texto-->
+	<h1 id="titulo">Tarea 02 con JavaScript</h1>
+	<!--Se pueso un id al boton para identificarlo y poder usarlo para cambiar el texto-->
+	<input type="button" value="ClicMe!" onclick="cambiartextos()" id="boton">
+
+</body>
+</html>
