@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tarea 2</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="">
+	
+</head>
+<body>
+	<li class="nav-item"><a class="nav-link" href="index.html">Indice</a></li>
+
+	<script>
+		//Declaramos nuestra variable en 0 porque este sera nuestro acumulador donde se guardara el resultado acumulado de las sumas 
+		var resultado=0;
+		//la variable num1 la convertimos a un valor numerico con parseInt y preguntamos al usuario por un numero
+		var num=parseInt(prompt("Ingresa un numero para sumar"));
+		//Hacemos un ciclo do while para preguntar por otro numero
+		do{
+			//Los numeros que son ingresados son guardados y sumados con el valor anterior por el acumulador 
+			resultado+=num;
+			//se pregunta si quiere ingresar otro numero
+		var num=parseInt(prompt("Ingresa otro numero para sumar o para terminar la suma presione cancelar o ponga un numero negativo o 0"));
+		}
+		//Si el usuario ingresa un numero mayor a cero se repite el ciclo
+		//pero si no este se detiene y arroja el resultado de la suma 
+		while(num>0);
+		//sale una alerta con el resultado y se concatena el acumulador
+		alert("La suma total acumulada es de: "+resultado);
+		
+		 
+	
+	</script>
+
+	
+</body>
+</html>
